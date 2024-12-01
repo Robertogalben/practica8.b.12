@@ -1,0 +1,89 @@
+h1{
+    text-align: center;
+    color: red;
+    font-size: 60px;
+     font-family: "Sixtyfour Convergence";
+}
+h2{
+    text-align: center;
+    text-shadow: 1px black;
+    color: rgb(240, 22, 22);
+    font-size: 32px;
+    font-family: "Jaro";
+}
+h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(240, 22, 22);
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Jaro";
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+    letter-spacing: 2px;
+}
+#texto{
+    font-size: 20px;
+    font-weight: bold;}
+li{
+    font-size: 20px;
+    text-decoration: none;
+font-weight: bold;}
+a:link{
+    color: black;
+    text-decoration: none; 
+}
+a:hover{
+    color: rgb(240, 22, 22);
+}
+a:visited{
+    color: blue;
+    font-weight: bold;
+}
+a:active{
+    color: rgb(240, 22, 22);
+    font-weight: bold;
+}
+body{
+    padding: 3%;
+    background-image: url(./images/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#estadio{
+    text-decoration: none;
+}
+
+.texto-fondo{
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backgroud-opopacity: 0.5;
+    border-radius: 13px;
+}
+
+.contenido{
+    font-weight: bold;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+.imagen{
+    max-width: 100px;
+    max-height: 100px; 
+}
+.imagen2{
+    max-width: 98px;
+    max-height: 98px; 
+}
+.escudo{
+    max-height:100px ;
+    padding-left: 47%;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+

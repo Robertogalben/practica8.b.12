@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Jaro:opsz@6..72&family=Pacifico&family=Parisienne&family=Satisfy&family=Sixtyfour+Convergence&family=Yuji+Mai&display=swap" rel="stylesheet">
+    <title>Reserva</title>
+    <style>
+    table {
+         width: 50%;
+         margin: 0 auto;
+         border-collapse: collapse;
+         background-color: #f9f9f9;
+         border-radius: 4px;
+         overflow: hidden;
+    }
+
+    table th, table td {
+        border: 2px solid black; 
+        padding: 10px; 
+        text-align: center; 
+        font-family: "Caveat" ;
+        font-size: 20px;
+    }
+
+    table th {
+    background-color: #f08080;
+    }
+    .volver{
+            max-width: 40px;
+            max-height: 40px; 
+            padding-top: 30px;
+        padding-left: 5px;}
+    body{
+            padding:25px;
+            background-image: url(./images/escudo.jpg);
+            
+            background-repeat: no-repeat;
+            background-color: #d3d3d3;
+         
+           
+    }
+    h1{     text-align: center;
+            font-size: 65px;
+            font-family: "Caveat" ;
+
+    }
+    .legend{
+        font-size: 40px;
+        font-family: "Caveat" ;
+       
+    }
+    .form{
+        padding-top: 50px;
+        font-family: "Caveat" ;
+        font-size: 22px;
+    }
+    .escudo{
+        padding-left: 37.5%;
+        padding-top: 20px;
+    }
+    .fila{}
+        
+    </style>
+</head>
+<body>
+    <h1>Haga su reserva</h1>
+    <table>
+    <tr>
+        <th class="fila">Especificaciones</th>
+        <th class="fila">Tarifa</th>
+    </tr>
+    <tr>
+        <th>Tour básico </th>
+        <th>20€</th>
+    </tr>
+    <tr>
+        <th>Tour guiádo</th>
+        <th>30€</th>
+    </tr>
+    <tr>
+        <th>Tour con jugadores</th>
+        <th>50€</th>
+    </tr>
+</table>
+
+<form action="formulario.php" method="post" class="form">
+<fieldset><legend class="legend">Datos de Reserva</legend>
+    <p><label for="nombre">Nombre y Apellidos <input type="text" maxlength="50"></label></p>
+
+    <p><label for="nombre">Dirección de correo <input type="text" maxlength="50"></label></p>
+
+    <p><label for="contraseña">Contraseña <input type="password" maxlength="8"></label></p>
+
+    <p><label for="fecha">Fecha de la reserva <input type="date"></label></p>
+    <p>Tipo de tour
+        <select name="tour" size="1">
+            <option value="basico">Básico</option>
+            <option value="guiado">Guiado</option>
+            <option value="con_jugadores">Con Jugadores</option>
+         </select>
+    </p>
+    <p>  Jugadores favoritos   
+        <textarea name="descripcion" rows="3"></textarea>
+</p>
+</fieldset>
+<p><label class="derechos"><input type="checkbox" name="desear" checked>Deseo recibir informacion sobre novedades y ofertas</label></p>
+<p><label class="derechos"><input type="checkbox" name="leido" >Declaro haber leido y acepto las condiciones generales del programa y la normativa sobre proteccion de datos</label></p>
+        
+<p>
+    <label><input type="submit" value="Enviar"></label>
+    <label><input type="reset" value="Reiniciar"></label>
+</p>
+<a href="index.html"> <img class="volver" src="./images/volver.png" ></a><div>Pagina principal</div>
+
+</form>
+</body>
+</html>
